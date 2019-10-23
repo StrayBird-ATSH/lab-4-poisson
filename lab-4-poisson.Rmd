@@ -1,0 +1,35 @@
+---
+title: 'Lab 4: Exploring the Poisson Probability Distribution'
+author: "Mary Ryan"
+date: "due: Oct 23, 2019 5:00 pm"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+## Poisson Distributions
+
+Functions: `dpois()`, `ppois()`, `qpois()`, `rpois()`
+
+You run a computer server that services a local message board. Records indicate that messages arrive to the server at a rate of 6 per hour.
+
+For each question below, write the code, then the text answer.
+
+1. What is the expected value of this distribution? What is the variance?
+
+2. What is the probability that, in the next hour, the server will receive exactly 5 messages?
+
+
+\newpage
+
+3. What is the probability that the server will receive no more than 10 messages but at least 5 messages in the next 2 hours?
+
+4. What is the probability that, in the next 3 hours, the server will receive exactly 10 messages?
+
+5. One of your friends says that there is only a 13% chance that the server will receive more than 8 messages in an hour. Are the correct? Why?
