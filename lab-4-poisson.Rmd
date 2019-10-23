@@ -1,6 +1,7 @@
 ---
 title: 'Lab 4: Exploring the Poisson Probability Distribution'
-author: "Mary Ryan"
+subtitle: "75694189 16257626 13341225"
+author: "Chen Wang, Junke Wang, Zhuozhi Xiong"
 date: "due: Oct 23, 2019 5:00 pm"
 output: pdf_document
 ---
