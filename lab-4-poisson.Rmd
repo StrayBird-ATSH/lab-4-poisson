@@ -32,7 +32,7 @@ Var(X) = lambda = 6 per hour^2.
 2. What is the probability that, in the next hour, the server will receive exactly 5 messages?
 
 ```{r}
-dpois(x=5,6)
+dpois(x = 5, lambda = 6)
 ```
 
 P(X=5) = 0.16
@@ -45,7 +45,8 @@ P(X=5) = 0.16
 For two hours, the new lambda will be 6 * 2 = 12/two hours.
 
 ```{r}
-dpois(5,12)+dpois(6,12)+dpois(7,12)+dpois(8,12)+dpois(9,12)+dpois(10,12)
+dpois(x = 5, lambda = 12) + dpois(x = 6,lambda = 12) + dpois(x = 7, lambda = 12) +
+  dpois(x = 8, lambda = 12) + dpois(x = 9, lambda = 12) + dpois(x = 10, lambda = 12)
 ```
 
 P(5<=X<=10) = 0.34
@@ -55,7 +56,7 @@ P(5<=X<=10) = 0.34
 For the next 3 hours, the new lambda will be 6 * 3 = 18/three hours.
 
 ```{r}
-dpois(10,18)
+dpois(x = 10, lambda = 18)
 ```
 
 P(X=10) = 0.01
@@ -63,7 +64,7 @@ P(X=10) = 0.01
 5. One of your friends says that there is only a 13% chance that the server will receive more than 8 messages in an hour. Are the correct? Why?
 
 ```{r}
-1-ppois(8,6)
+1 - ppois(q = 8, lambda = 6)
 ```
 
 This is not true. Because P(X>8) = 0.15
