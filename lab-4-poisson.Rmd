@@ -42,6 +42,28 @@ P(X=5) = 0.16
 
 3. What is the probability that the server will receive no more than 10 messages but at least 5 messages in the next 2 hours?
 
+For two hours, the new lambda will be 6 * 2 = 12/two hours.
+
+```{r}
+dpois(5,12)+dpois(6,12)+dpois(7,12)+dpois(8,12)+dpois(9,12)+dpois(10,12)
+```
+
+P(5<=X<=10) = 0.34
+
 4. What is the probability that, in the next 3 hours, the server will receive exactly 10 messages?
 
+For the next 3 hours, the new lambda will be 6 * 3 = 18/three hours.
+
+```{r}
+dpois(10,18)
+```
+
+P(X=10) = 0.01
+
 5. One of your friends says that there is only a 13% chance that the server will receive more than 8 messages in an hour. Are the correct? Why?
+
+```{r}
+1-ppois(8,6)
+```
+
+This is not true. Because P(X>8) = 0.15
