@@ -24,7 +24,18 @@ For each question below, write the code, then the text answer.
 
 1. What is the expected value of this distribution? What is the variance?
 
+
+In this question, lambda = 6/hour. And the expected value will be E(x) = lambda = 6 per hour.
+
+Var(X) = lambda = 6 per hour^2. 
+
 2. What is the probability that, in the next hour, the server will receive exactly 5 messages?
+
+```{r}
+dpois(x=5,6)
+```
+
+P(X=5) = 0.16
 
 
 \newpage
