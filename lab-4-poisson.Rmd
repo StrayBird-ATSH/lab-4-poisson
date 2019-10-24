@@ -49,6 +49,13 @@ dpois(x = 5, lambda = 12) + dpois(x = 6,lambda = 12) + dpois(x = 7, lambda = 12)
   dpois(x = 8, lambda = 12) + dpois(x = 9, lambda = 12) + dpois(x = 10, lambda = 12)
 ```
 
+Another solution:
+
+```{r}
+ppois(10,12)-ppois(4,12)
+```
+
+
 P(5<=X<=10) = 0.34
 
 4. What is the probability that, in the next 3 hours, the server will receive exactly 10 messages?
